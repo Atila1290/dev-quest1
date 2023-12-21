@@ -98,16 +98,18 @@ body{
     }
 
     .container .hero .image{
-        width: 300px;
+        width: 100%;
     }
 
     .container .footer{
         display: flex;
         justify-content: center;
     }
-
-    .container .footer a i{
-        margin-top: 20px;
-    }
   
+}
+
+@media (max-width:375px){
+   .container .hero .about h1{
+    font-size: 25px;
+   }
 }
