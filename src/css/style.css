@@ -1,0 +1,113 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body{
+    background: url(../images/bg-desktop.svg) no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    padding: 30px;
+
+}
+
+.container .logo{
+    width: 100px;
+    padding: 20px 0px
+}
+
+.container .hero{
+    display: flex;
+}
+
+.container .hero .image{
+    width: 50%;
+    padding: 30px;
+}
+
+.container .hero .about{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.container .hero .about .button{
+    background: #fff no-repeat;
+    color: hsl(257, 40%, 49%);
+    width: 120px;
+    border-radius: 20% ;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.container .hero .about .button:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+
+.container .hero .about h1{
+    font-weight: 700px;
+    font-size: 30px;
+}
+
+.container .hero .about p{
+    font-weight: 400;
+    font-size: 11px;
+}
+
+
+.container .footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container .footer a i{
+    border: solid 2px rgb(228, 224, 224);
+    margin: 5px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.container .footer a i:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+@media (max-width:425px){
+    .container .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .hero .about{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .container .hero .image{
+        width: 300px;
+    }
+
+    .container .footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .footer a i{
+        margin-top: 20px;
+    }
+  
+}
