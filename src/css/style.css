@@ -38,21 +38,23 @@ body{
     flex-direction: column;
     gap: 25px;
     margin-top: 20px;
+    max-width: 500px;
 }
 
 .container .hero .about .button{
     background: #fff no-repeat;
     color: hsl(257, 40%, 49%);
-    width: 120px;
-    border-radius: 20% ;
+    width: 200px;
+    border-radius: 20px;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 30px;
     font-size: 14px;
     transition: 0.5s;
 }
 
 .container .hero .about .button:hover{
     background-color: hsl(300, 69%, 71%);
+    color: #fff;
 }
 
 .container .hero .about h1{
@@ -67,54 +69,19 @@ body{
 }
 
 
-.container .footer{
+.container .footer nav ul{
     display: flex;
     justify-content: flex-end;
 }
 
-.container .footer a i{
+.container .footer nav ul li a i{
     border: solid 2px rgb(228, 224, 224);
     margin: 5px;
     border-radius: 50%;
     padding: 8px;
 }
 
-.container .footer a i:hover{
+.container .footer nav ul li a i:hover{
     color: hsl(300, 69%, 71%);
 }
 
-@media (max-width:768px){
-    .container .hero{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container .hero .about{
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .container .hero .image{
-        width: 100%;
-    }
-
-    .container .footer{
-        display: flex;
-        justify-content: center;
-    }
-
-    .container .hero .about p {
-        font-size: 11px;
-    }
-
-}
-
-@media (max-width:375px){
-   .container .hero .about h1{
-    font-size: 20px;
-   }
-}
